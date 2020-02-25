@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flag can render a flag can set a maxHeight 1`] = `
+<img
+  alt="CA Flag"
+  className="fade_1gq9q0"
+  onLoad={[Function]}
+  src="https://assets.flexport.com/flags/svg/1/CA.svg"
+  style={
+    Object {
+      "height": "64px",
+      "maxWidth": "64px",
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Flag can render a flag works as expected 1`] = `
+<Flag
+  countryCode="AU"
+>
+  <img
+    alt="AU Flag"
+    className="fade_1gq9q0"
+    onLoad={[Function]}
+    src="https://assets.flexport.com/flags/svg/1/AU.svg"
+    style={
+      Object {
+        "height": "auto",
+        "maxWidth": null,
+        "width": "100%",
+      }
+    }
+  />
+</Flag>
+`;

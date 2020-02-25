@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentTabs renders 1`] = `
+<div
+  className="container_t0nwzw-o_O-hidden_gxjeqd"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <div
+    className="tabsContainer_3yo7qj"
+  >
+    <DocumentTab
+      isInDropdown={false}
+      isOverflow={false}
+      isSelected={true}
+      key="0"
+      onClick={[Function]}
+      onDelete={[Function]}
+      size="m"
+      width={0}
+    >
+      doc1.pdf
+    </DocumentTab>
+    <MoreTab
+      selectedLabel="doc1.pdf"
+      size="m"
+      width={0}
+    >
+      <DocumentTab
+        isInDropdown={true}
+        isOverflow={true}
+        isSelected={false}
+        key="1"
+        onClick={[Function]}
+        onDelete={[Function]}
+        size="m"
+        width={0}
+      >
+        doc2.pdf
+      </DocumentTab>
+    </MoreTab>
+  </div>
+  <div
+    className="addButtonWrapper_h2lsf5"
+  >
+    <IconButton
+      disabled={false}
+      height={
+        Object {
+          "type": "fixed",
+        }
+      }
+      iconAlignment="left"
+      iconName="upload"
+      intent="none"
+      isLoading={false}
+      kind="bare"
+      onClick={[Function]}
+      size="m"
+      type="button"
+      width="responsive"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pill works as expected, does not show close button if onDismiss is not provided 1`] = `
+<Pill>
+  <span
+    className="pill_oagavu"
+    style={
+      Object {
+        "borderRadius": 15,
+        "height": 30,
+        "padding": "0 8px",
+      }
+    }
+  >
+    <Text
+      color="grey40"
+      overflow="hidden"
+      scale="subtext"
+      textOverflow="ellipsis"
+      whiteSpace="nowrap"
+    >
+      <span
+        className="standardOverride_eiiwmj"
+        style={
+          Object {
+            "color": "#67768D",
+            "display": "inline-block",
+            "fontFamily": Array [
+              "gt-america",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "Segoe UI",
+              "Roboto",
+              "Oxygen",
+              "Ubuntu",
+              "Cantarell",
+              "Fira Sans",
+              "Droid Sans",
+              "Helvetica Neue",
+              "sans-serif",
+            ],
+            "fontSize": "12px",
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "letterSpacing": 0,
+            "lineHeight": "16px",
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "textTransform": "initial",
+            "whiteSpace": "nowrap",
+            "wordBreak": "normal",
+          }
+        }
+      >
+        child
+      </span>
+    </Text>
+  </span>
+</Pill>
+`;
+
+exports[`Pill works as expected, shows close button if onDismiss is provided 1`] = `
+<Pill
+  onDismiss={[Function]}
+>
+  <span
+    className="pill_oagavu"
+    style={
+      Object {
+        "borderRadius": 15,
+        "height": 30,
+        "padding": "0 8px",
+      }
+    }
+  >
+    <Text
+      color="grey40"
+      overflow="hidden"
+      scale="subtext"
+      textOverflow="ellipsis"
+      whiteSpace="nowrap"
+    >
+      <span
+        className="standardOverride_eiiwmj"
+        style={
+          Object {
+            "color": "#67768D",
+            "display": "inline-block",
+            "fontFamily": Array [
+              "gt-america",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "Segoe UI",
+              "Roboto",
+              "Oxygen",
+              "Ubuntu",
+              "Cantarell",
+              "Fira Sans",
+              "Droid Sans",
+              "Helvetica Neue",
+              "sans-serif",
+            ],
+            "fontSize": "12px",
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "letterSpacing": 0,
+            "lineHeight": "16px",
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "textTransform": "initial",
+            "whiteSpace": "nowrap",
+            "wordBreak": "normal",
+          }
+        }
+      >
+        child
+      </span>
+    </Text>
+    <span
+      style={
+        Object {
+          "paddingLeft": "12px",
+        }
+      }
+    >
+      <IconButton
+        disabled={false}
+        height={
+          Object {
+            "height": 12,
+            "type": "customDontUse",
+          }
+        }
+        iconAlignment="left"
+        iconName="cancel"
+        intent="none"
+        isLoading={false}
+        kind="blank"
+        onClick={[Function]}
+        size="m"
+        type="button"
+        width="responsive"
+      >
+        <button
+          className="base_i7qsly-o_O-blank_1tdfl6w-o_O-responsive_zk4wup-o_O-button_1cblu7c-o_O-none_v41adi"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <Icon
+            alignment="center"
+            deprecatedAllowColorInheritance={true}
+            iconName="cancel"
+            isARIAAccessible={false}
+            size="xs"
+          >
+            <span
+              className="wrapper_17y0hv9 svgIcon"
+              style={
+                Object {
+                  "fill": "unset",
+                  "height": 12,
+                  "width": 12,
+                }
+              }
+            >
+              <svg
+                aria-hidden="true"
+                aria-labelledby="title desc"
+                className="svgCenter_1r81nla"
+                color="unset"
+                height={12}
+                role="img"
+                style={
+                  Object {
+                    "height": "unset",
+                    "width": "unset",
+                  }
+                }
+                viewBox="0 0 64 64"
+                width={12}
+              >
+                <title
+                  id="title"
+                />
+                <desc
+                  id="desc"
+                >
+                  X
+                </desc>
+                <g
+                  fillRule="nonzero"
+                >
+                  <path
+                    d="M53.213 46.142L39.071 32l14.142-14.142a1 1 0 0 0 0-1.414l-5.657-5.657a1 1 0 0 0-1.414 0L32 24.929 17.858 10.787a1 1 0 0 0-1.414 0l-5.657 5.657a1 1 0 0 0 0 1.414L24.929 32 10.787 46.142a1 1 0 0 0 0 1.414l5.657 5.657a1 1 0 0 0 1.414 0L32 39.071l14.142 14.142a1 1 0 0 0 1.414 0l5.657-5.657a1 1 0 0 0 0-1.414z"
+                    fillRule="evenodd"
+                    key="0"
+                    role="presentation"
+                  />
+                </g>
+              </svg>
+            </span>
+          </Icon>
+        </button>
+      </IconButton>
+    </span>
+  </span>
+</Pill>
+`;

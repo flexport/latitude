@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileUploader renders FileUploader with dropzone when showDropzone={true} 1`] = `
+<div
+  className="uploaderContainer_zdxht7"
+>
+  <n
+    className="dropzone_18gt2je"
+    disableClick={false}
+    disablePreview={false}
+    disabled={false}
+    getDataTransferItems={[Function]}
+    inputProps={Object {}}
+    maxSize={Infinity}
+    minSize={0}
+    multiple={true}
+    onDrop={[Function]}
+    preventDropOnDocument={true}
+  >
+    <Group
+      alignItems="center"
+      containerFlex={1}
+      fillChildren={false}
+      flexDirection="row"
+      flexWrap="wrap"
+      gap={8}
+      justifyContent="center"
+    >
+      <Text>
+        Drag and drop a file or
+      </Text>
+      <Button
+        disabled={false}
+        intent="basic"
+        isLoading={false}
+        kind="hollow"
+        label="Click to upload"
+        onClick={[Function]}
+        size="m"
+        type="submit"
+        width="responsive"
+      />
+    </Group>
+  </n>
+  <AttachmentList
+    attachments={Array []}
+    documentTypeList={
+      Array [
+        Object {
+          "name": "Document Type A",
+          "value": "document_type_a",
+        },
+        Object {
+          "name": "Document Type B",
+          "value": "document_type_b",
+        },
+        Object {
+          "name": "Document Type E",
+          "value": "document_type_e",
+        },
+      ]
+    }
+    fileNameEditable={false}
+    onAttachmentsChange={[Function]}
+    showDescriptionEditor={false}
+    showDocumentTypeSelector={true}
+    showPreview={false}
+  />
+</div>
+`;
+
+exports[`FileUploader renders simple FileUploader Button 1`] = `
+<div
+  className="uploaderContainer_zdxht7"
+>
+  <FileInputButton
+    onClick={[Function]}
+  />
+  <AttachmentList
+    attachments={Array []}
+    documentTypeList={
+      Array [
+        Object {
+          "name": "Document Type A",
+          "value": "document_type_a",
+        },
+        Object {
+          "name": "Document Type B",
+          "value": "document_type_b",
+        },
+        Object {
+          "name": "Document Type E",
+          "value": "document_type_e",
+        },
+      ]
+    }
+    fileNameEditable={false}
+    onAttachmentsChange={[Function]}
+    showDescriptionEditor={false}
+    showDocumentTypeSelector={true}
+    showPreview={false}
+  />
+</div>
+`;

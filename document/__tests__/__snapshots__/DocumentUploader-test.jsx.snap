@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentUploader renders 1`] = `
+<div
+  className="container_190hxbq"
+>
+  <CSSTransition
+    classNames={
+      Object {
+        "enter": "toastEnter_1l5jodu",
+        "enterActive": "toastEnterActive_1iz1aph",
+        "exit": "toastExit_1d9en8k",
+        "exitActive": "toastExitActive_1ha42n4",
+      }
+    }
+    in={false}
+    timeout={300}
+    unmountOnExit={true}
+  >
+    <Portal
+      key="toast"
+    >
+      <div
+        className="toastContainer_d3m088"
+      >
+        <Toast
+          action={
+            Object {
+              "type": "none",
+            }
+          }
+          intent="success"
+          message=""
+        />
+      </div>
+    </Portal>
+  </CSSTransition>
+  <n
+    className="dropContainer_39qci3-o_O-pointer_13xlah4"
+    disableClick={false}
+    disablePreview={true}
+    disabled={false}
+    getDataTransferItems={[Function]}
+    inputProps={Object {}}
+    maxSize={Infinity}
+    minSize={0}
+    multiple={true}
+    onDragEnter={[Function]}
+    onDragLeave={[Function]}
+    onDrop={[Function]}
+    preventDropOnDocument={true}
+    style={Object {}}
+  >
+    <div
+      className="body_1ndpwxc"
+    >
+      <GraphicIcon
+        icon="document_add"
+        width={180}
+      />
+      <Text>
+        Drag and drop files or
+      </Text>
+      <div
+        className="m_10ax4iw"
+      >
+        <Button
+          disabled={false}
+          intent="basic"
+          isLoading={false}
+          kind="hollow"
+          label="Click here to upload"
+          size="m"
+          type="button"
+          width="responsive"
+        />
+      </div>
+    </div>
+  </n>
+</div>
+`;

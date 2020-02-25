@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchableSelectInput matches snapshot 1`] = `
+<SearchableSelectInput
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "a",
+        "value": 1,
+      },
+      Object {
+        "label": "b",
+        "value": 2,
+      },
+      Object {
+        "label": "c",
+        "value": 3,
+      },
+    ]
+  }
+  value={1}
+>
+  <PopupWithClickAway
+    escToClose={false}
+    onClose={[Function]}
+    onOpen={[Function]}
+  >
+    <Manager>
+      <OnClickOutside(OnClickOutside)
+        eventTypes={
+          Array [
+            "mousedown",
+            "touchstart",
+          ]
+        }
+        excludeScrollbar={false}
+        onClickOutside={[Function]}
+        outsideClickIgnoreClass="ignore-react-onclickoutside"
+        preventDefault={false}
+        stopPropagation={false}
+      >
+        <OnClickOutside
+          disableOnClickOutside={[Function]}
+          enableOnClickOutside={[Function]}
+          eventTypes={
+            Array [
+              "mousedown",
+              "touchstart",
+            ]
+          }
+          onClickOutside={[Function]}
+          outsideClickIgnoreClass="ignore-react-onclickoutside"
+          preventDefault={false}
+          stopPropagation={false}
+        >
+          <div
+            className="container_e296pg-o_O-darkPlaceholderText_1sk0oij"
+          >
+            <Component>
+              <Reference>
+                <InnerReference
+                  setReferenceNode={[Function]}
+                >
+                  <div
+                    onKeyDown={[Function]}
+                    role="presentation"
+                  >
+                    <div
+                      className="inputWrapper_e296pg"
+                    >
+                      <TextInput
+                        disabled={false}
+                        isInvalid={false}
+                        isPrefilled={false}
+                        maxLength={255}
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="a"
+                        readOnly={false}
+                        size="m"
+                        suffix={
+                          Object {
+                            "iconName": "cancel",
+                            "onClick": [Function],
+                            "size": "m",
+                          }
+                        }
+                        textAlign="left"
+                        textOverflow="ellipsis"
+                        type="text"
+                        value=""
+                      >
+                        <div
+                          className="wrapper_oxngbz"
+                        >
+                          <input
+                            className="baseNoPadding_656545-o_O-applyEllipsis_lspcml"
+                            disabled={false}
+                            maxLength={255}
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            onKeyDown={[Function]}
+                            onMouseDown={[Function]}
+                            placeholder="a"
+                            readOnly={false}
+                            style={
+                              Object {
+                                "paddingLeft": 10,
+                                "paddingRight": 32,
+                                "textAlign": "left",
+                              }
+                            }
+                            type="text"
+                            value=""
+                          />
+                          <Sigil
+                            disabled={false}
+                            paddingDefaultTextInput={10}
+                            side="right"
+                            sigil={
+                              Object {
+                                "iconName": "cancel",
+                                "onClick": [Function],
+                                "size": "m",
+                              }
+                            }
+                            size="m"
+                          >
+                            <span
+                              className="sigil_1ogu4v7"
+                              style={
+                                Object {
+                                  "right": "10px",
+                                }
+                              }
+                            >
+                              <IconButton
+                                disabled={false}
+                                height={
+                                  Object {
+                                    "type": "fixed",
+                                  }
+                                }
+                                iconAlignment="left"
+                                iconName="cancel"
+                                intent="none"
+                                isLoading={false}
+                                kind="blank"
+                                onClick={[Function]}
+                                size="m"
+                                type="button"
+                                width="responsive"
+                              >
+                                <button
+                                  className="base_i7qsly-o_O-m_12juzcr-o_O-blank_1tdfl6w-o_O-responsive_zk4wup-o_O-button_yfi27k-o_O-none_v41adi"
+                                  disabled={false}
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  type="button"
+                                >
+                                  <Icon
+                                    alignment="center"
+                                    deprecatedAllowColorInheritance={true}
+                                    iconName="cancel"
+                                    isARIAAccessible={false}
+                                    size="xs"
+                                  >
+                                    <span
+                                      className="wrapper_17y0hv9 svgIcon"
+                                      style={
+                                        Object {
+                                          "fill": "unset",
+                                          "height": 12,
+                                          "width": 12,
+                                        }
+                                      }
+                                    >
+                                      <svg
+                                        aria-hidden="true"
+                                        aria-labelledby="title desc"
+                                        className="svgCenter_1r81nla"
+                                        color="unset"
+                                        height={12}
+                                        role="img"
+                                        style={
+                                          Object {
+                                            "height": "unset",
+                                            "width": "unset",
+                                          }
+                                        }
+                                        viewBox="0 0 64 64"
+                                        width={12}
+                                      >
+                                        <title
+                                          id="title"
+                                        />
+                                        <desc
+                                          id="desc"
+                                        >
+                                          X
+                                        </desc>
+                                        <g
+                                          fillRule="nonzero"
+                                        >
+                                          <path
+                                            d="M53.213 46.142L39.071 32l14.142-14.142a1 1 0 0 0 0-1.414l-5.657-5.657a1 1 0 0 0-1.414 0L32 24.929 17.858 10.787a1 1 0 0 0-1.414 0l-5.657 5.657a1 1 0 0 0 0 1.414L24.929 32 10.787 46.142a1 1 0 0 0 0 1.414l5.657 5.657a1 1 0 0 0 1.414 0L32 39.071l14.142 14.142a1 1 0 0 0 1.414 0l5.657-5.657a1 1 0 0 0 0-1.414z"
+                                            fillRule="evenodd"
+                                            key="0"
+                                            role="presentation"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </Icon>
+                                </button>
+                              </IconButton>
+                            </span>
+                          </Sigil>
+                        </div>
+                      </TextInput>
+                    </div>
+                  </div>
+                </InnerReference>
+              </Reference>
+            </Component>
+            <Component
+              className="popup_zdxht7"
+              noPortal={true}
+              placement="bottom-start"
+              zIndex={1500}
+            >
+              <div
+                className="ignore-react-onclickoutside"
+              >
+                <Popper
+                  placement="bottom-start"
+                >
+                  <InnerPopper
+                    eventsEnabled={true}
+                    placement="bottom-start"
+                    positionFixed={false}
+                    referenceElement={
+                      <div
+                        role="presentation"
+                      >
+                        <div
+                          class="inputWrapper_e296pg"
+                        >
+                          <div
+                            class="wrapper_oxngbz"
+                          >
+                            <input
+                              class="baseNoPadding_656545-o_O-applyEllipsis_lspcml"
+                              maxlength="255"
+                              placeholder="a"
+                              style="text-align: left; padding-left: 10px; padding-right: 32px;"
+                              type="text"
+                              value=""
+                            />
+                            <span
+                              class="sigil_1ogu4v7"
+                              style="right: 10px;"
+                            >
+                              <button
+                                class="base_i7qsly-o_O-m_12juzcr-o_O-blank_1tdfl6w-o_O-responsive_zk4wup-o_O-button_yfi27k-o_O-none_v41adi"
+                                type="button"
+                              >
+                                <span
+                                  class="wrapper_17y0hv9 svgIcon"
+                                  style="width: 12px; height: 12px; fill: unset;"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    aria-labelledby="title desc"
+                                    class="svgCenter_1r81nla"
+                                    color="unset"
+                                    height="12"
+                                    role="img"
+                                    viewBox="0 0 64 64"
+                                    width="12"
+                                  >
+                                    <title
+                                      id="title"
+                                    />
+                                    <desc
+                                      id="desc"
+                                    >
+                                      X
+                                    </desc>
+                                    <g
+                                      fill-rule="nonzero"
+                                    >
+                                      <path
+                                        d="M53.213 46.142L39.071 32l14.142-14.142a1 1 0 0 0 0-1.414l-5.657-5.657a1 1 0 0 0-1.414 0L32 24.929 17.858 10.787a1 1 0 0 0-1.414 0l-5.657 5.657a1 1 0 0 0 0 1.414L24.929 32 10.787 46.142a1 1 0 0 0 0 1.414l5.657 5.657a1 1 0 0 0 1.414 0L32 39.071l14.142 14.142a1 1 0 0 0 1.414 0l5.657-5.657a1 1 0 0 0 0-1.414z"
+                                        fill-rule="evenodd"
+                                        role="presentation"
+                                      />
+                                    </g>
+                                  </svg>
+                                </span>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                  />
+                </Popper>
+              </div>
+            </Component>
+          </div>
+        </OnClickOutside>
+      </OnClickOutside(OnClickOutside)>
+    </Manager>
+  </PopupWithClickAway>
+</SearchableSelectInput>
+`;

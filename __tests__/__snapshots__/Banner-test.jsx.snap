@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner matches snapshot 1`] = `
+<Banner
+  message="I am a banner"
+>
+  <div
+    className="container_1m2wvan-o_O-default_1tkyt1i"
+  >
+    <div
+      className="contentWrapper_pmg5nu"
+    >
+      <div
+        className="iconWrapper_kh8dwt"
+      />
+      <div
+        className="content_1kq4jtl"
+      >
+        I am a banner
+      </div>
+    </div>
+  </div>
+</Banner>
+`;

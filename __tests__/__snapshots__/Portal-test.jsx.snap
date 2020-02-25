@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portal matches snapshot 1`] = `
+<div>
+  <Portal>
+    <Portal
+      containerInfo={<body />}
+    />
+  </Portal>
+</div>
+`;

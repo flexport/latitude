@@ -1,0 +1,114 @@
+/*
+ * TEAM: frontend_infra
+ * style overloads for react-datepicker
+ */
+
+ .react-datepicker-popper {
+  z-index: 10;
+}
+
+ .react-datepicker {
+  border: 1px solid #CED7DE;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  margin: 3px 0;
+}
+
+.react-datepicker__header {
+  background: transparent;
+  border-bottom: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0;
+}
+
+.react-datepicker__current-month {
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.react-datepicker__navigation {
+  border: 2px solid #6E7881;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  outline: none;
+  transform: translate(0, 50%) rotate(135deg);
+  transition: border-color 150ms ease-in-out;
+}
+
+.react-datepicker__navigation:hover {
+  border-color: #18191A;
+}
+
+.react-datepicker__navigation--previous {
+  border-left: none;
+  border-top: none;
+  left: 16px;
+}
+
+.react-datepicker__navigation--next {
+  border-right: none;
+  border-bottom: none;
+  right: 16px;
+}
+
+.react-datepicker__day-names {
+  padding: 5px 8px;
+  border: 1px solid #EDF3F7;
+  border-left: none;
+  border-right: none;
+}
+
+.react-datepicker__day-name {
+  line-height: 20px;
+  color: #6E7881;
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.react-datepicker__day {
+  border-radius: 50%;
+  text-align: center;
+}
+
+.react-datepicker__day:hover {
+  box-shadow: inset 0 0 0 3px #CED7DE;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.react-datepicker__day:active {
+  box-shadow: inset 0 0 0 3px #B0BAC2;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.react-datepicker__day--selected {
+  background-color: #3E6BE6;
+}
+
+.react-datepicker__day--selected:hover {
+  box-shadow: none;
+  background-color: #265DF1;
+  border-radius: 50%;
+}
+
+.react-datepicker__day--selected:active {
+  box-shadow: none;
+  background-color: #1942B3;
+  border-radius: 50%;
+}
+
+.transmissionApp .react-datepicker__day--selected {
+  background-color: #66CC86;
+}
+
+.transmissionApp .react-datepicker__day--selected:hover {
+  background-color: #12B873;
+}
+
+.transmissionApp .react-datepicker__day--selected:active {
+  background-color: #2DA854;
+}

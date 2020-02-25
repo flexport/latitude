@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader it does the bare minimum matches snapshot 1`] = `
+<Loader
+  loaded={false}
+>
+  <span
+    className="fullWidthContainer_zdxht7"
+  >
+    <div
+      className="overlayContainer_e296pg"
+    >
+      <div
+        className="circularWrapper_d1ib85-o_O-center_uv044x"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          className="loader_17h5kom"
+          viewBox="25 25 50 50"
+        >
+          <circle
+            className="loaderPath_1g72glc"
+            cx="50"
+            cy="50"
+            fill="none"
+            r="20"
+            strokeMiterlimit="10"
+            strokeWidth="2"
+          />
+        </svg>
+      </div>
+    </div>
+  </span>
+</Loader>
+`;

@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toaster renders when empty 1`] = `
+<TransitionGroup
+  childFactory={[Function]}
+  className="toaster_k4yls8-o_O-m_10ax4iw"
+  component="div"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
+/>
+`;
+
+exports[`Toaster renders when not empty 1`] = `
+<TransitionGroup
+  childFactory={[Function]}
+  className="toaster_k4yls8-o_O-m_10ax4iw"
+  component="div"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
+>
+  <CSSTransition
+    classNames={
+      Object {
+        "enter": "toastEnter_1l5jodu",
+        "enterActive": "toastEnterActive_1iz1aph",
+        "exit": "toastExit_1d9en8k",
+        "exitActive": "toastExitActive_1ha42n4",
+      }
+    }
+    key="hello-0"
+    timeout={300}
+  >
+    <div
+      className="active-toast"
+    >
+      <Toast
+        action={
+          Object {
+            "type": "none",
+          }
+        }
+        id={0}
+        intent="success"
+        message="hello"
+      />
+    </div>
+  </CSSTransition>
+  <CSSTransition
+    classNames={
+      Object {
+        "enter": "toastEnter_1l5jodu",
+        "enterActive": "toastEnterActive_1iz1aph",
+        "exit": "toastExit_1d9en8k",
+        "exitActive": "toastExitActive_1ha42n4",
+      }
+    }
+    key="hello-1"
+    timeout={300}
+  >
+    <div
+      className="active-toast"
+    >
+      <Toast
+        action={
+          Object {
+            "type": "none",
+          }
+        }
+        id={1}
+        intent="success"
+        message="hello"
+      />
+    </div>
+  </CSSTransition>
+</TransitionGroup>
+`;

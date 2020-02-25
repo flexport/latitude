@@ -1,0 +1,3 @@
+# TEAM: frontend_infra
+env:
+  jest: true

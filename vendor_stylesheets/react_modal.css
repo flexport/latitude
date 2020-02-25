@@ -1,0 +1,34 @@
+/* TEAM: frontend_infra */
+
+.ReactModal__Content {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.ReactModal__Content--after-open {
+  transition: all 300ms ease-out;
+  transition-delay: 150ms;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ReactModal__Content--before-close {
+  transition: all 300ms ease-out;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+}
+
+.ReactModal__Overlay--after-open {
+  transition: all 200ms ease-out;
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  transition: all 200ms ease-out;
+  transition-delay: 150ms;
+  opacity: 0;
+}

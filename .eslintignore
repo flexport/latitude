@@ -1,0 +1,22 @@
+# Checked-in 3rd party code
+flow-typed-overrides/**/*
+**/flow-typed/**/*
+.yarn/**/*
+
+# generated files
+*.generated.js
+RouteConstants.js
+
+# test data
+*.fixture.js
+
+# webpack configuration generated files
+webpack/config.builder.js
+webpack/config.common.js
+webpack/config.dev.js
+webpack/config.devserver.hot.js
+webpack/config.devserver.js
+webpack/config.unused.js
+webpack/entryPoints.js
+
+/storybook-static

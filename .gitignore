@@ -1,0 +1,43 @@
+# IF MODIFYING THIS, BE SURE TO ALSO MODIFY .dockerignore
+
+/storybook-static
+
+.cache
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# ctags
+.tags
+.tags_sorted_by_file
+
+.vscode
+.idea
+
+# Node modules
+node_modules/
+
+# precompiled assets
+/public/assets/*
+/public/packs/*.js
+/public/packs/manifest.json
+/private/build/source_maps/*.map
+
+# sitemaps (which are automatically generated on the servers)
+/public/sitemap.xml.gz
+/public/sitemap1.xml.gz
+
+# VS Code js config
+jsconfig.json
+
+# Allow .tmp and .temp extensions for ignored files everywhere
+*.tmp
+*.temp

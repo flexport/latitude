@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInputAutocomplete matches snapshot 1`] = `
+<TextInputAutocomplete
+  maximumOptions={10}
+  onChange={[Function]}
+  suggestions={
+    Array [
+      "aaa",
+      "aaabbb",
+      "aaabbbccc",
+    ]
+  }
+  suggestionsFilter={[Function]}
+  value=""
+>
+  <PopupWithClickAway
+    escToClose={false}
+    onClose={[Function]}
+    onOpen={[Function]}
+  >
+    <Manager>
+      <OnClickOutside(OnClickOutside)
+        eventTypes={
+          Array [
+            "mousedown",
+            "touchstart",
+          ]
+        }
+        excludeScrollbar={false}
+        onClickOutside={[Function]}
+        outsideClickIgnoreClass="ignore-react-onclickoutside"
+        preventDefault={false}
+        stopPropagation={false}
+      >
+        <OnClickOutside
+          disableOnClickOutside={[Function]}
+          enableOnClickOutside={[Function]}
+          eventTypes={
+            Array [
+              "mousedown",
+              "touchstart",
+            ]
+          }
+          onClickOutside={[Function]}
+          outsideClickIgnoreClass="ignore-react-onclickoutside"
+          preventDefault={false}
+          stopPropagation={false}
+        >
+          <div
+            className="container_e296pg"
+          >
+            <Component>
+              <Reference>
+                <InnerReference
+                  setReferenceNode={[Function]}
+                >
+                  <div
+                    onKeyDown={[Function]}
+                    role="presentation"
+                  >
+                    <TextInput
+                      disabled={false}
+                      isInvalid={false}
+                      isPrefilled={false}
+                      maxLength={255}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseDown={[Function]}
+                      placeholder=""
+                      readOnly={false}
+                      size="m"
+                      textAlign="left"
+                      type="text"
+                      value=""
+                    >
+                      <div
+                        className="wrapper_oxngbz"
+                      >
+                        <input
+                          className="baseNoPadding_656545"
+                          disabled={false}
+                          maxLength={255}
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          placeholder=""
+                          readOnly={false}
+                          style={
+                            Object {
+                              "paddingLeft": 10,
+                              "paddingRight": 10,
+                              "textAlign": "left",
+                            }
+                          }
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                    </TextInput>
+                  </div>
+                </InnerReference>
+              </Reference>
+            </Component>
+            <Component
+              noPortal={true}
+              placement="bottom-start"
+              zIndex={1500}
+            >
+              <div
+                className="ignore-react-onclickoutside"
+              >
+                <Popper
+                  placement="bottom-start"
+                >
+                  <InnerPopper
+                    eventsEnabled={true}
+                    placement="bottom-start"
+                    positionFixed={false}
+                    referenceElement={
+                      <div
+                        role="presentation"
+                      >
+                        <div
+                          class="wrapper_oxngbz"
+                        >
+                          <input
+                            class="baseNoPadding_656545"
+                            maxlength="255"
+                            placeholder=""
+                            style="text-align: left; padding-left: 10px; padding-right: 10px;"
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                      </div>
+                    }
+                  />
+                </Popper>
+              </div>
+            </Component>
+          </div>
+        </OnClickOutside>
+      </OnClickOutside(OnClickOutside)>
+    </Manager>
+  </PopupWithClickAway>
+</TextInputAutocomplete>
+`;

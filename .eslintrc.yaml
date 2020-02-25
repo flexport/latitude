@@ -1,0 +1,314 @@
+# TEAM: frontend_infra
+
+extends:
+  - airbnb
+  - prettier
+  - prettier/flowtype
+  - prettier/react
+
+plugins:
+  - react
+  - import
+  - lodash
+  - flowtype
+  - jest
+  - react-hooks
+  - autofix
+
+env:
+  jest/globals: true
+  browser: true
+
+globals:
+  # This is configured in webpack, and lets us use dead code elimination to
+  # fence off code that should only be run in tests (and dev)
+  __TEST_ENV__: true
+  __webpack_chunk_load__: true
+
+settings:
+  import/resolver:
+    webpack:
+      config: "webpack/config.common.js"
+  flowtype:
+    onlyFilesWithFlowAnnotation: false
+  react:
+    createClass: "createReactClass"
+    version: "detect"
+
+parser: "babel-eslint"
+
+rules:
+  # enabled in airbnb, but disabled in eslint-config-prettier.
+  # See https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback
+  arrow-body-style:
+    [error, as-needed]
+  # Specifically allow UNSAFE_ prefixed lifecycle methods in React
+  camelcase:
+    [
+      error,
+      {
+        allow:
+          [
+            "UNSAFE_componentWillMount",
+            "UNSAFE_componentWillUpdate",
+            "UNSAFE_componentWillReceiveProps",
+          ],
+        properties: "never",
+      }
+    ]
+  class-methods-use-this:
+    [
+      error,
+      {
+        exceptMethods:
+          [
+            'render',
+            'getInitialState',
+            'getDefaultProps',
+            'getChildContext',
+            'componentWillMount',
+            'componentDidMount',
+            'componentWillReceiveProps',
+            'shouldComponentUpdate',
+            'componentWillUpdate',
+            'componentDidUpdate',
+            'componentWillUnmount',
+            'componentDidCatch',
+            # TODO(jon-t): get these three upstream so we can delete this block
+            'UNSAFE_componentWillMount',
+            'UNSAFE_componentWillUpdate',
+            'UNSAFE_componentWillReceiveProps',
+          ],
+      }
+    ]
+  no-console: error
+  no-constant-condition: error
+  no-redeclare: [error, {builtinGlobals: true}]
+  no-restricted-imports:
+    [
+      error,
+      {
+        paths:
+          [
+            {
+              name: "components/shipments/shipping_instructions/CarrierShippingInstructionEditor",
+              message: "This component should only be imported dynamically.",
+            },
+            {
+              name: "core/components/shipments/show/flight_scheduler/FlightScheduler",
+              message: "This component should only be imported dynamically.",
+            },
+            {
+              name: "react-select",
+              message: "Import from latitude/select/react-select-exported instead, since it includes the styles for react-select.",
+            },
+            {
+              name: "lodash",
+              importNames:
+                [
+                  "set",
+                  "get",
+                  "chain",
+                  "bind",
+                  "partial",
+                  "max",
+                  "min",
+                  "isFunction",
+                  "isBoolean",
+                  "isNil",
+                  "isUndefined",
+                  "isNull",
+                  "filter",
+                  "reject",
+                  "compact",
+                  "some",
+                  "every",
+                  "map",
+                  "reduce",
+                  "isEmpty",
+                  "size",
+                  "assign",
+                  "merge",
+                  "extend",
+                ],
+              message: "Don't use these lodash methods; use lodash only when necessary. Visit https://flexport.atlassian.net/wiki/spaces/EN/pages/179077263/Lodash+usage+guide for alternatives.",
+            },
+          ],
+      },
+    ]
+  spaced-comment:
+    ["error", "always", {"exceptions": ["/"], "markers": ["::", "="]}]
+  # We use leading underscores
+  no-underscore-dangle: off
+  # Francisco hates this rule so we turned it off. Direct your thanks to him.
+  no-use-before-define: off
+
+  # Shadowing isn't a very difficult concept. --dmnd
+  no-shadow: off
+
+  # We want to be able to write named functional components
+  prefer-arrow-callback:
+    [error, {allowNamedFunctions: true, allowUnboundThis: true}]
+
+  prefer-object-spread: error
+
+  # This isn't very valuable when we have static types, and it gets confused by
+  # invariant.
+  consistent-return: off
+
+  # REACT HOOKS (remove once this is in airbnb config)
+  #####################
+
+  react-hooks/rules-of-hooks: error
+
+  # REACT PLUGIN RULES
+  #####################
+
+  react/jsx-boolean-value: [error, always]
+  react/jsx-fragments: error
+  react/jsx-key: error
+  react/no-direct-mutation-state: error
+  react/prop-types: off # Turning this on causes eslint to crash (version 7.4.0)
+  react/jsx-handler-names: warn
+  react/no-did-mount-set-state: warn
+  react/prefer-read-only-props: error
+  react/no-unsafe: [error, {checkAliases: true}]
+
+  # Using stylized components like <Button> instead of <button>
+  react/forbid-elements:
+    [
+      error,
+      {
+        "forbid":
+          [
+            {"element": "button", "message": "use <Button> instead"},
+            {"element": "h1", "message": "use <Text> instead"},
+            {"element": "h2", "message": "use <Text> instead"},
+            {"element": "h3", "message": "use <Text> instead"},
+            {"element": "h4", "message": "use <Text> instead"},
+            {"element": "h5", "message": "use <Text> instead"},
+            {"element": "h6", "message": "use <Text> instead"},
+            {"element": "a", "message": "use <Link> or <Button> instead"},
+          ],
+      },
+    ]
+
+  # A better version of this rule would be "export at most one component per
+  # file". Unfortunately as is this rules bans private components.
+  react/no-multi-comp: off
+  react/forbid-prop-types: off
+
+  # TODO(zach): Turn this on
+  react/sort-comp: off
+
+  # TODO(zach): This is broken
+  react/no-unused-prop-types: off
+
+  # These don't make sense in flow, they use PropTypes, but flow infers that for us
+  react/require-default-props: off
+  react/default-props-match-prop-types: off
+
+  # we have reflective bind, so don't need this
+  react/jsx-no-bind: off
+
+  import/default: error
+  import/no-unresolved: error
+  import/no-self-import: error
+  import/extensions: [error, ignorePackages, {"js": "never", "jsx": "never"}]
+  import/no-extraneous-dependencies: error
+
+  # LODASH PLUGIN RULES
+  #####################
+  lodash/callback-binding: error
+  lodash/no-extra-args: error
+  lodash/unwrap: error
+  lodash/collection-return: error
+  lodash/no-double-unwrap: error
+  lodash/no-unbound-this: error
+  lodash/import-scope: [error, member]
+
+  # FLOWTYPE PLUGIN RULES
+  #######################
+  flowtype/boolean-style: [error, boolean]
+  flowtype/define-flow-type: error
+  flowtype/delimiter-dangle: [error, always-multiline]
+  flowtype/no-dupe-keys: error
+  flowtype/no-primitive-constructor-types: error
+  flowtype/no-weak-types: [
+    error,
+    {
+      "any": false,
+      "Object": true,
+      "Function": true,
+    }
+  ]
+  flowtype/require-parameter-type:
+    - error
+    - excludeParameterMatch: "^_"
+      excludeArrowFunctions: true
+  flowtype/require-valid-file-annotation: [error, always]
+  flowtype/semi: [error, always]
+  flowtype/space-before-type-colon: [error, never]
+  flowtype/space-before-generic-bracket: [error, never]
+  flowtype/type-id-match: [error, "^\\$?([A-Z][a-z0-9]*)+"]
+  flowtype/union-intersection-spacing: [error, always]
+  flowtype/use-flow-type: [error]
+  flowtype/no-types-missing-file-annotation: [error]
+
+  # rules disabled for now due to amount of work needed
+  flowtype/require-return-type: off
+  flowtype/require-variable-type: off
+
+  # rules disabled because there's no good reason to enable
+  flowtype/sort-keys: off
+
+  # Cosmetic rules disabled because we use prettier
+  flowtype/generic-spacing: off
+  flowtype/space-after-colon: off
+  flowtype/object-type-delimiter: off
+
+  # AUTOFIX CUSTOM RULES
+  ######################
+
+  # Replace no-unused-vars with an autofixable version
+  no-unused-vars: off
+  autofix/no-unused-vars: [
+    "error",
+    {
+      "vars": "all",
+      "args": "all",
+      "ignoreRestSiblings": true,
+      "varsIgnorePattern": "^_",
+      "argsIgnorePattern": "^_"
+    }
+  ]
+
+  # FLEXPORT CUSTOM RULES
+  #######################
+  # TODO(dmnd): Figure out how to add these back
+  # flexport/flowfixme-needs-owner: [error]
+  # flexport/must-have-team: [error]
+  # flexport/no-bound-react-lifecycle-methods: [error]
+  # flexport/no-buttons-without-type: [error]
+  # flexport/no-componentDidMount-leaks: [error]
+  # flexport/no-dangerous-store-use: [error]
+  # flexport/no-disabled-anchors: [error]
+  # flexport/no-dollar-sign-react-types: [error]
+  # flexport/no-event-handler-methods: [error]
+  # flexport/no-external-graphql-imports: [error]
+  # flexport/no-href-on-buttons: [error]
+  # flexport/no-setState-in-constructor: [error]
+  # flexport/no-ugly-buttons: [error]
+  # flexport/no-unknown-styles: [error]
+  # flexport/no-unsafe-test-hook: [error]
+  # flexport/no-unused-aphrodite-styles: [error]
+  # flexport/no-unused-handlers: [error]
+  # flexport/no-oocss: [error]
+  # flexport/password-must-have-data-sensitive: [error]
+  # flexport/prefer-includes-to-indexOf: [error]
+  # flexport/puritan-extends-component: [error]
+  # flexport/use-date-dot-now: [error]
+  # flexport/no-relative-imports: [error]
+  # flexport/no-render-props-as-methods: [error]
+  # flexport/graphql-queries-must-have-types: [error]
+  # flexport/dynamic-import-webchunkname: [error]

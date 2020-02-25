@@ -1,0 +1,8 @@
+package.json
+
+# ported from excluded-files-regex
+flow-typed/**
+flow-typed-overrides/**
+*__generated__*
+package.json
+.yarn/**

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar it does the bare minimum matches snapshot 1`] = `
+<ProgressBar
+  loaded={false}
+>
+  <span>
+    <div
+      className="overlayContainer_e296pg"
+    >
+      <div
+        className="base_1ijm83g-o_O-fullWidth_zdxht7"
+      >
+        <div
+          className="indeterminateLoading_6fvt2s-o_O-fullWidthIndeterminateLoading_1nl2nri"
+        />
+      </div>
+    </div>
+  </span>
+</ProgressBar>
+`;
